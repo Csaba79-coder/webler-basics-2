@@ -5,6 +5,8 @@ import java.util.stream.IntStream;
 
 public class ReserveOrder {
 
+    static int[] nums = {1, 2, 3, 4, 5};
+
     public static void main(String[] args) {
         int[] numbers = {1, 2, 3, 4, 5};
         int[] reversNums = reverseOrder(numbers);
@@ -13,6 +15,11 @@ public class ReserveOrder {
         System.out.println(Arrays.toString(reversNumsAdam));
         int[] reversNumsCsaba = reversOrderCsaba(numbers);
         System.out.println(Arrays.toString(reversNumsCsaba));
+        System.out.println("---------------");
+        int[] revNums = reverseOrder(nums);
+        int[] revNums2 = reverseOrder(nums);
+        System.out.println(Arrays.toString(revNums));
+        System.out.println(Arrays.toString(revNums2));
     }
 
     private static int[] reverseOrder(int[] numbers) {
