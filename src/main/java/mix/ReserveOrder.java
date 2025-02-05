@@ -22,7 +22,10 @@ public class ReserveOrder {
         System.out.println(Arrays.toString(revNums2));
     }
 
-    private static int[] reverseOrder(int[] numbers) {
+    static int[] reverseOrder(int[] numbers) {
+        if (numbers == null) {
+            return null;
+        }
         int length = numbers.length;
         int[] reverseNumbers = new int[length];
         int index = 0;
